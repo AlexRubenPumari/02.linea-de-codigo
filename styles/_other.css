@@ -1,0 +1,171 @@
+/* variables */
+:root
+{
+    --c-amarillo:#FFA500;
+}
+
+.contenedor--azul
+{
+    background-color: var(--color-azul);
+}
+.contenedor--gris
+{
+    background:var(--color-gris);
+    font-size:0;
+    overflow: hidden;
+}
+.contenedor--verde-agua
+{
+    color: var(--color-blanco);
+    background-color: var(--color-verde-agua);
+}
+
+.icon--html:hover
+{
+    color: #F37C29;
+    font-weight: 600;
+}
+.icon--java:hover
+{
+    color:#7882A1;
+    font-weight:600;
+}
+.icon--js:hover
+{
+    color: #F5E04F;
+    font-weight:600;
+}
+.icon--css:hover
+{
+    color: #264DE4;
+    font-weight:600;
+}
+.icon--python:hover
+{
+    color: #FFDE57;
+    font-weight:600;
+}
+.icon--php:hover
+{
+    color: #8993BE;
+    font-weight:600;
+}
+.icon--boots:hover
+{
+    color: #563D7C;
+    font-weight:600;
+}
+.icon--boots:hover .path
+{
+    fill: var(--color-blanco);
+}
+.icon--nodejs:hover
+{
+    color: #68A063;
+    font-weight:600;
+}
+
+
+.subtitulo--amarillo
+{
+    color:var(--color-naranja);
+
+}
+.info__subtitulo--negro
+{
+    color: var(--color-negro);
+    font-weight: 600;
+}
+
+
+
+
+/* botones de sociales del contenido */
+.botonRedes--x
+{
+    background-color:#0D1014;
+}
+.botonRedes--face
+{
+    background-color:#1877F2;
+}
+.botonRedes--link
+{
+    background-color:#2767B1;
+}
+.botonRedes--pin
+{
+    background-color:#E60023;
+}
+
+
+/* comentarios */
+.iconTitulo--rayo
+{
+    color:#FFA600;
+    border-bottom: 2px solid #FFA600;
+}
+.iconTitulo--fuego
+{
+    color:#FC5844;
+    border-bottom:2px solid #FC5844;
+}
+
+
+
+
+
+.comentario:hover .iconoTitulo--compartir, 
+.comentario:hover .Boton
+{
+    opacity: 1;
+}
+.Boton--compartir
+{
+    display: inline-block;
+    margin-left: 1em;
+    float: none;
+}
+.Boton__cartel--compartir
+{
+    padding: .5em .7em;
+
+    top: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.Boton__cartel--compartir::after
+{
+    top: 100%;
+    left: 50%;
+    transform: translatex(-50%);
+
+    border-left: .5em solid transparent;
+    border-top: .5em solid var(--color-negro);
+    border-right: .5em solid transparent;
+}
+
+.titulo-aside--ama
+{
+    border-bottom-color: #c4c4c4 ;
+    margin-bottom: 1.5em;
+}
+    .titulo-aside__texto--amarillo
+    {
+        color: var(--color-blanco);
+        font-size: 1.8rem;
+        border-bottom-color:var(--c-amarillo);
+    }
+
+.lista__elemento--ama
+{
+    margin-left: 2em;
+    list-style: disc;
+
+    color: inherit;
+}
+.lista__elemento--ama:hover
+{
+    color: var(--c-amarillo);
+}
+

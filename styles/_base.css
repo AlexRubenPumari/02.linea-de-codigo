@@ -1,0 +1,140 @@
+/* Raiz -> Custom Properties */
+:root{
+    /* Variables */
+    --color-primario:#181818;
+    --color-secundario:#f0f0f0;
+    /* Tipografias */
+    --tipog-ppal:Helvetica, Arial, sans-serif;
+    --tipog-secundaria: Verdana;
+}
+/* Mediaquerys */
+/* Cambia los colores, según el modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root{
+        --color-primario:#f0f0f0;
+        --color-secundario:#181818;
+    }
+}
+/* Opcional: Cambia los colores, según el contrate */
+@media (prefers-contrast: high){
+    :root{
+        --color-primario:black;
+        --color-secundario:white;
+    }
+}
+/* Opcional: Desactivar las animaciones segun config. de usuario */
+@media (prefers-reduced-motion: reduce){
+    /* Poner aca las etiquetas con animacion, por ejemplo:
+    *{
+        animation:none;
+        transition:none;
+    } */
+}
+/* Reset de margin y padding */
+*{
+    margin: 0;
+    /* padding: 0; */
+    border: 0;
+    box-sizing: border-box;
+    /* Display. Sin duda la prop css..., Jab. Arreglar imagen dentro de una caja tipo block */
+    vertical-align: baseline;
+}
+/* mi opcion */
+*::after,
+*::before
+{
+    content:'';
+    box-sizing: border-box;
+}
+ul,li,dl,button{
+    padding: 0;
+}
+/* Arreglar problemas de imagen */
+img, picture, video, iframe, figure{
+    /* Nunca va a ser más grande que la ventana o contenedor */
+    max-width:100%;
+    width: 100%;
+    display:block;
+}
+
+/* Reset para que los enlaces funcionen como cajas tipo bloque... */
+a{
+    display:block;
+}
+/* ...A excepcion de los enlances dentro de párrafos */
+p a,
+span a
+{
+    display: inline;
+}
+/* Quitar los puntos de las etiquetas <li> */
+li{
+    list-style-type: none;
+}
+/* Configurar anclas("#") suaves */
+html{
+    scroll-behavior:smooth;
+}
+/* Reset estilos por defecto de las ppales. etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em{
+    font-size:1em;
+    font-weight:inherit;
+    font-style: inherit;
+    /* Subrayado */
+    text-decoration: none;
+    color:inherit;
+}
+/* Evitar problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+}
+/* Configurar la seleccion de texto */
+::selection{
+    /* Variables relacionadas con los colores personalizados */
+    background-color: rgb(58, 146, 254);
+    color:var(--color-secundario);
+}
+/* Nivelar todas las etiquetas de tipografia y coloc. de formularios */
+form, input, textarea, select, button, label, fieldset, button{
+    /* Fieldset, opcion mía */
+    font-family: inherit;
+    font-size: inherit;
+    /* Desbordamientos en formularios, uso de guiones separa silabas por el lenguaje: "lang"*/
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+    /* appearance: none;opcional */
+}
+/* Reset de tablas */
+table, tr, td{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Problemas con SVG */
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+/* Configurar la tipografia para toda la web */
+body{
+    /* La web limpia, ocupará la pantalla como minimo */
+    min-height:100vh;
+    /* Cien por ciento respecto a la config. del usuario */
+    font-size: 100%;
+    font-family: var(--tipog-ppal);
+    color: var(--color-primario);
+    /* background-color: var(--color-secundario); */
+    /* Opcional line-height de 1.4-1.6 */
+    line-height: 1.4em;
+    /* Opcional */
+    /* hyphens: auto; */
+    /* Opcional */
+    font-smooth: always;
+    /* Opcional */
+    -webkit-font-smoothing:antialiased;
+    /* Opcional */
+    -moz-osx-font-smoothing:grayscale;
+}
