@@ -7,6 +7,7 @@ btnRestar.addEventListener("click", restarCont)
 btnSumar.addEventListener("click", sumarCont)
 
 var contador = 0
+contadorComentario.innerText = contador;
 function restarCont()
 {
     if(contador > 0)
