@@ -354,7 +354,7 @@
 
 
 
-/* seccion comentarios */
+/* seccion arios */
 .darComentario
 {
     width:70%;
@@ -582,6 +582,10 @@
         font-size: 1rem;
         margin: 0 0 1em 0;
     }
+.comentario__pie
+{
+    user-select: none;
+}
 
     .comentario__valor,
     .comentario__botonPlus,
